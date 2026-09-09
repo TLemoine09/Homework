@@ -9,18 +9,66 @@ p{
 header{
     color: black;
     background-color: white;
-}
-h1,h2,h3,h4{
-    font-family: fantasy;
-    color: black;
+    text-align: center;
 }
 a{
     text-decoration: none;
     font-weight: bold;
 }
-a:link{
-    color: navy;
+body{
+    background-color: lightslategray;
+    font-family: 'Arial', Helvetica, sans-serif;
 }
+.highlight{ /*I made this a little more clean*/
+    color: white;
+    font-weight: bold;
+    margin: 60px;
+    padding:20px;
+    border:2px solid rgb(179, 15, 15);
+    font-size: 25px;
+    font-family:'times new roman';
+} /* I wanted some of the sections to have a different color and border hence the red, and purple*/
+
+#site-footer{ /*My footer is on all 3 pages*/
+    position: sticky;
+    text-align: center;
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+a:link{
+    color:navy; /*I added some linking stuff right here*/
+    text-align: center;
+}
+
+a:visited{
+    color:rgb(153, 2, 2)
+}
+
+a:hover{
+    color:rgb(255, 3, 129);
+    text-decoration:wavy;
+    text-shadow:10px 10px 5px black;
+    font-size: xx-large;
+}
+
+a:active{
+    color:rgb(81, 46, 128);
+}
+/*I added some stuff for my table*/
+table{
+    color:white;
+    border:6px solid black;
+    font-size: 20px;
+    font-family:'Times New Roman';
+}
+.section{ /*I added some POP to my sections*/
+    background-color: rgb(48, 36, 156);
+    border: 6px solid rgb(137, 20, 184);
+    padding: 20px;
+    margin: 20px;
+}
+
 table{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
