@@ -19,4 +19,4 @@
 
 
     document.body.innerHTML += "<p>Result: " + total + "</p>";
-    //This adds a new paragraph containing the result of this page
+    //This adds a new paragraph containing the result of this page. Basically taking all of this and giving the total value which is why we used total. Total in this case I think would be adding everything math wise up thats in the javascript page/
