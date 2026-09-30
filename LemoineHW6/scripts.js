@@ -1,4 +1,4 @@
-let racetime = number(prompt("What was your last 110m hurdles time in seconds?"));
+let racetime = Number(prompt("What was your last 110m hurdles time in seconds?"));
 let hithudrles = prompt("Did you hit any hurdles? (yes/no)").toLowerCase();
 let wearingspikes = prompt("Were you wearing spikes? (yes/no)").toLowerCase();
 
