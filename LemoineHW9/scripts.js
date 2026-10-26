@@ -19,4 +19,4 @@ printSquare(30);
 function welcomeUser(name){
     console.log("Welcome, " + name + "!");
 }
-welcomeUser("Alice");
+welcomeUser("Tory");
