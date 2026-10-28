@@ -5,33 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM - video games</title>
     <style>
-        .highlight-mode{
+        .highlight-mode {
             background-color: navy;
+            color: white;
             transition: background-color 0.5s ease;
-        
         }
-        .dark-mode{
+        .dark-mode {
             background-color: black;
             color: white;
             transition: background-color 0.5s ease, color 0.5s ease;
         }
-        body{
+        body {
             font-family: Arial, sans-serif;
             padding: 20px;
             line-height: 1.6;
         }
-        img{
+        main {
+            padding: 15px;
+            border-radius: 8px;
+        }
+        img {
             max-width: 100%;
             height: auto;
             border-radius: 8px;
+            cursor: pointer;
+        }
+        button {
+            padding: 8px 16px;
+            margin-right: 5px;
+            margin-top: 10px;
             cursor: pointer;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Video Games</h1>
+        <h1 id="video-game-title">Video Games</h1>
     </header>
     
+    <main id="game-main">
+        <p id="challenge" class="game-description">
+            Welcome to the video games section!
+        </p>
+        <ul id="game-list"> 
+        </ul>
+        <img id="game-image" src="https://media1.tenor.com/m/DtD4LZbctTIAAAAC/tamm-cat.gif" alt="Game Image Trust">
+        <div>
+            <button id="toggle-dark-mode">Toggle Dark Mode</button>
+            <button id="toggle-highlight-mode">Toggle Highlight Mode</button>
+            <button id="swap-image">Swap Image</button>
+        </div>
+    </main>
+    
+    <footer id="game-footer">&copy; 2026 Video Games Section</footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
