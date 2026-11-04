@@ -1,9 +1,7 @@
 // --- 1. Toggle Theme ---
 const themeButton = document.getElementById("themeToggle");
-
 themeButton.addEventListener("click", () => {
- 
-  document.body.classList.toggle("dark");
+    document.body.classList.toggle("dark");
   console.log("Theme changed!");
 });
 
