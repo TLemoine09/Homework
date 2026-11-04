@@ -11,17 +11,13 @@ themeButton.addEventListener("click", () => {
 // --- 2. Add Items to a List ---
 const addBtn = document.getElementById("addItem");
 const list = document.getElementById("items");
-let counter = 1; // Keeps track of item numbers
+let counter = 1; 
 
 addBtn.addEventListener("click", () => {
-  // Create a new list item in memory
-  const newItem = document.createElement("li");
-  
+ const newItem = document.createElement("li");
   newItem.textContent = "*Task* " + counter + " (Click to blow it up!)";
-  
-  list.appendChild(newItem);
-  
-  counter++; 
+   list.appendChild(newItem);
+   counter++; 
 });
 
 
@@ -37,7 +33,6 @@ list.addEventListener("click", (event) => {
 
 // --- 4. Keyboard Input Event ---
 const keyOutput = document.getElementById("keyOutput");
-
 document.addEventListener("keyup", (event) => {
   keyOutput.textContent = "You pressed: " + event.key;
 });
