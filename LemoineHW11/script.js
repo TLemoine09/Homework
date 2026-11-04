@@ -1,4 +1,4 @@
-// --- 1. Toggle Theme (Click Event) ---
+// --- 1. Toggle Theme ---
 const themeButton = document.getElementById("themeToggle");
 
 themeButton.addEventListener("click", () => {
@@ -21,7 +21,7 @@ addBtn.addEventListener("click", () => {
 });
 
 
-// --- 3. Remove Items (Delegation Trick & Challenge) ---
+// --- 3. Remove Items ---
 list.addEventListener("click", (event) => {
   
   if (event.target.tagName === "LI") {
