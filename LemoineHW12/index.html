@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guild Registration</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guild Member Registration</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <div class="container">
+    <h1>Join the Adventurers Guild</h1>
     
+    <form id="guildForm">
+      <div class="form-group">
+        <label for="gamertag">Gamertag / Hero Name:</label>
+        <input type="text" id="gamertag" placeholder="e.g. ShadowBlade99" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Player Email:</label>
+        <input type="email" id="email" placeholder="hero@realm.com" required>
+      </div>
+      <div class="form-group">
+        <label for="characterClass">Choose Character Class:</label>
+        <select id="characterClass" required>
+          <option value="">-- Select Class --</option>
+          <option value="Warrior">Warrior</option>
+          <option value="Mage">Mage</option>
+          <option value="Rogue">Rogue</option>
+          <option value="Healer">Healer</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="startingLevel">Starting Level (1 - 100):</label>
+        <input type="number" id="startingLevel" min="1" max="100" value="1" required>
+      </div>
+      <div class="form-group">
+        <label>Playstyle:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="playstyle" value="Casual" checked> Casual / PvE</label>
+          <label><input type="radio" name="playstyle" value="Hardcore"> Hardcore / Raids</label>
+          <label><input type="radio" name="playstyle" value="PvP"> Competitive PvP</label>
+        </div>
+      </div>
+
+      <button type="submit" id="submitBtn">Enlist Hero</button>
+    </form>
+
+    <section id="summary" class="hidden">
+      <h2>Guild Registration Card</h2>
+      <div id="summaryContent"></div>
+    </section>
+  </div>
+ <script src="script.js"></script>
 </body>
 </html>
