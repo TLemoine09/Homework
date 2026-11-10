@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Contact Us</h1>
+  <form id="contact-form">
+    <label for="name">Name:</label>
+    <input id="name" type="text" placeholder="Your name" required />
+
+    <label for="email">Email:</label>
+    <input id="email" type="email" placeholder="you@example.com" required />
+
+    <!-- Favorite Color -->
+    <label for="color">Favorite Color:</label>
+    <input id="color" type="text" placeholder="e.g. Blue" required />
+
+    <label for="message">Message:</label>
+    <textarea id="message" rows="4" placeholder="Write something..."></textarea>
+
+    <button type="submit">Submit Form</button>
+  </form>
+
+  <section id="result"></section>
+
+  <script src="script.js"></script>
+</body>
+</html>
